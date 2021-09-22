@@ -11,18 +11,7 @@
 - Navigate inside project directory
 
   ```
-  cd remoe-company
-  ```
-
-- Checkout the development branch
-
-  ```
-  git checkout development
-  ```
-
-- Create environment file by copying .env.example file to .env
-  ```
-  cp .env.example .env
+  cd remote-company
   ```
 
 - Create environment file by copying .env.example file to .env
@@ -42,6 +31,8 @@
     composer install
     npm install
     touch database/database.sqlite
+    php artisan migrate
+    php artisan storage:link
   ```
 
 - To start the project run the below command and then navigate to http://localhost:8000/

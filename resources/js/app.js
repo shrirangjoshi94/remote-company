@@ -19,6 +19,14 @@ window.Vue = require('vue').default;
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
+Vue.component('pdf-component', require('./components/Management/PdfComponent.vue').default);
+Vue.component('snippet-component', require('./components/Management/SnippetComponent.vue').default);
+Vue.component('link-component', require('./components/Management/LinkComponent.vue').default);
+
+Vue.component('pdf-display-component', require('./components/Visitor/PdfDisplayComponent.vue').default);
+Vue.component('snippet-display-component', require('./components/Visitor/SnippetDisplayComponent.vue').default);
+Vue.component('link-display-component', require('./components/Visitor/LinkDisplayComponent.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

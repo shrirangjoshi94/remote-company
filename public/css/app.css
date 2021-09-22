@@ -1,4 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 1s;
+}
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
 @charset "UTF-8";
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
